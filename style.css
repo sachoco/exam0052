@@ -1,0 +1,226 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.results,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+.input-group.float {
+  float: left;
+  padding: 3px;
+}
+.clear {
+  clear: both;
+}
+.margin-top {
+  margin-top: 20px;
+}
+.results .input-group {
+  width: 210px;
+}
+.pagination {
+  margin: 10px 0;
+}
+.entry {
+  margin-bottom: 20px;
+}
+.entry header {
+  font-size: 0.8em;
+}
+.entry h4 {
+  margin:5px 0 3px 0;
+}
+.entry .description {
+  font-size: 0.8em;
+}
+.entry .link {
+  font-size: 0.8em;
+  color: #4cae4c;
+}
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255, 0.5);
+  z-index: 9999;
+} 
+
+/* Loading animation*/
+.throbber {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.throbber:after {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: rotate 0.6s linear infinite;
+  -moz-animation: rotate 0.6s linear infinite;
+  -ms-animation: rotate 0.6s linear infinite;
+  -o-animation: rotate 0.6s linear infinite;
+  animation: rotate 0.6s linear infinite;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border-top: 2px solid #545a6a;
+  border-bottom: 2px solid #d4d4db;
+  border-left: 2px solid #545a6a;
+  border-right: 2px solid #d4d4db;
+  content: '';
+  opacity: .5;
+}
+.throbber.throbber_medium:after {
+  width: 60px;
+  height: 60px;
+}
+// Animation
+
+@keyframes rotate {
+  0% {
+    -moz-transform:rotateZ(-360deg);
+    -ms-transform:rotateZ(-360deg);
+    -webkit-transform:rotateZ(-360deg);
+    transform:rotateZ(-360deg)  
+  }
+  100% {
+    -moz-transform:rotateZ(0deg);
+    -ms-transform:rotateZ(0deg);
+    -webkit-transform:rotateZ(0deg);
+    transform:rotateZ(0deg)  
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -moz-transform:rotateZ(-360deg);
+    -ms-transform:rotateZ(-360deg);
+    -webkit-transform:rotateZ(-360deg);
+    transform:rotateZ(-360deg)  
+  }
+  100% {
+    -moz-transform:rotateZ(0deg);
+    -ms-transform:rotateZ(0deg);
+    -webkit-transform:rotateZ(0deg);
+    transform:rotateZ(0deg)  
+  }
+}
+
+@-moz-keyframes rotate {
+  0% {
+    -moz-transform:rotateZ(-360deg);
+    -ms-transform:rotateZ(-360deg);
+    -webkit-transform:rotateZ(-360deg);
+    transform:rotateZ(-360deg)  
+  }
+  100% {
+    -moz-transform:rotateZ(0deg);
+    -ms-transform:rotateZ(0deg);
+    -webkit-transform:rotateZ(0deg);
+    transform:rotateZ(0deg)  
+  }
+}
+
+@-o-keyframes rotate {
+  0% {
+    -moz-transform:rotateZ(-360deg);
+    -ms-transform:rotateZ(-360deg);
+    -webkit-transform:rotateZ(-360deg);
+    transform:rotateZ(-360deg)  
+  }
+  100% {
+    -moz-transform:rotateZ(0deg);
+    -ms-transform:rotateZ(0deg);
+    -webkit-transform:rotateZ(0deg);
+    transform:rotateZ(0deg)  
+  }
+}
+
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn-lg {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+.results {
+  margin: 40px 0;
+}
+.results p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .results,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
