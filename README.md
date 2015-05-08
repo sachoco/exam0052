@@ -13,7 +13,10 @@ PHP 5.3.23以上
   + GITレポジトリはこちら→　https://github.com/sachoco/exam0052.git
   + （フォルダ内のファイル全てをルートディレクトリにアップロードしてください。その際ファイル名「import.php」のパーミッションが755になっていることを確認）
 
-2. テーブルの作成（以下のSQLコマンドを使用）
+2. config.phpの編集
+  + mySQLデータベース用コンフィデンシャルを入力
+
+3. テーブルの作成（以下のSQLコマンドを使用）
   ```
 CREATE TABLE `entry` (
 `id` int(11) unsigned NOT NULL,
