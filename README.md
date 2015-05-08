@@ -1,4 +1,4 @@
-# CREATE ENTRANCE BV 採用課題
+# FC2新着ブログ情報検索アプリ
 作成者：白石　怜（sachoco@gmail.com）
 
 #### デモ：
