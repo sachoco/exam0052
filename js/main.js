@@ -104,7 +104,7 @@ function searchItems( ){
 		method: "POST",
 		url: "search.php",
 		dataType: "json",
-		data: { action: "search", date: date, url: url, username: username, serverid: serverid, entryno, entryno, entryno_option: entryno_option, num_per_page: num_per_page },
+		data: { action: "search", date: date, url: url, username: username, serverid: serverid, entryno: entryno, entryno_option: entryno_option, num_per_page: num_per_page },
 		beforeSend: function(){
 			$(".results").prepend($loading);
 			$loading.show();
@@ -139,7 +139,7 @@ function getItemsByPage(p){
 		method: "POST",
 		url: "search.php",
 		dataType: "json",
-		data: { action: "move_page", page: page, date: date, url: url, username: username, serverid: serverid, entryno, entryno, entryno_option: entryno_option, num_per_page: num_per_page },
+		data: { action: "move_page", page: page, date: date, url: url, username: username, serverid: serverid, entryno: entryno, entryno_option: entryno_option, num_per_page: num_per_page },
 		beforeSend: function(){
 			$(".results").prepend($loading);
 			$loading.show();
@@ -161,7 +161,7 @@ function changeNumPerPage(){
 		method: "POST",
 		url: "search.php",
 		dataType: "json",
-		data: { action: "move_page", page: page, date: date, url: url, username: username, serverid: serverid, entryno, entryno, entryno_option: entryno_option, num_per_page: num_per_page },
+		data: { action: "move_page", page: page, date: date, url: url, username: username, serverid: serverid, entryno: entryno, entryno_option: entryno_option, num_per_page: num_per_page },
 		beforeSend: function(){
 			$(".results").prepend($loading);
 			$loading.show();
