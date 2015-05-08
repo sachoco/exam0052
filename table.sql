@@ -11,7 +11,7 @@ CREATE TABLE `entry` (
 -- Indexes for table `entry`
 --
 ALTER TABLE `entry`
- ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `id` (`id`), ADD UNIQUE KEY `link` (`link`);
+ ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `id` (`id`);
 
 --
 -- AUTO_INCREMENT for table `entry`
