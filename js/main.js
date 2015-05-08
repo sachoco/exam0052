@@ -107,6 +107,7 @@ function searchItems( ){
 		data: { action: "search", date: date, url: url, username: username, serverid: serverid, entryno, entryno, entryno_option: entryno_option, num_per_page: num_per_page },
 		beforeSend: function(){
 			$(".results").prepend($loading);
+			$loading.show();
 		},
 		success: function( data ){
 			
@@ -141,6 +142,7 @@ function getItemsByPage(p){
 		data: { action: "move_page", page: page, date: date, url: url, username: username, serverid: serverid, entryno, entryno, entryno_option: entryno_option, num_per_page: num_per_page },
 		beforeSend: function(){
 			$(".results").prepend($loading);
+			$loading.show();
 		},
 		success: function( data ){
 			showItems(data);
@@ -162,6 +164,7 @@ function changeNumPerPage(){
 		data: { action: "move_page", page: page, date: date, url: url, username: username, serverid: serverid, entryno, entryno, entryno_option: entryno_option, num_per_page: num_per_page },
 		beforeSend: function(){
 			$(".results").prepend($loading);
+			$loading.show();
 		},
 		success: function( data ){
 			showItems(data);
