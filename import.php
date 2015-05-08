@@ -1,7 +1,7 @@
 #!/usr/bin/php
 <?php
 // 外部からのアクセスを制限
-// if (isset($_SERVER['REMOTE_ADDR'])) die('Permission denied.');
+if (isset($_SERVER['REMOTE_ADDR'])) die('Permission denied.');
 
 use Zend\Feed\Reader\Reader;
 use Zend\Db\Sql\Sql;
