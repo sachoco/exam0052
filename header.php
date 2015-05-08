@@ -15,8 +15,8 @@
 			<div class="header clearfix">
 				<nav>
 					<ul class="nav nav-pills pull-right">
-						<li role="presentation" class="<?php if($page=="index") echo active; ?>"><a href="/">メイン</a></li>
-						<li role="presentation" class="<?php if($page=="about") echo active; ?>"><a href="/about.php">本アプリについて</a></li>
+						<li role="presentation" class="<?php if($page=="index") echo active; ?>"><a href="index.php">メイン</a></li>
+						<li role="presentation" class="<?php if($page=="about") echo active; ?>"><a href="about.php">本アプリについて</a></li>
 						<li role="presentation"><a href="#">コンタクト</a></li>
 					</ul>
 				</nav>
