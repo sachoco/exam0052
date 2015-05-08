@@ -72,7 +72,12 @@ body {
   background: rgba(255,255,255, 0.5);
   z-index: 9999;
 } 
-
+.bootstrap-select.entryno_option button {
+  width: 130px;
+}
+.bootstrap-select.num_per_page button{
+  width: 60px;
+}
 /* Loading animation*/
 .throbber {
   width: 100%;
