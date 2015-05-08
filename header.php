@@ -17,7 +17,7 @@
 					<ul class="nav nav-pills pull-right">
 						<li role="presentation" class="<?php if($page=="index") echo active; ?>"><a href="index.php">メイン</a></li>
 						<li role="presentation" class="<?php if($page=="about") echo active; ?>"><a href="about.php">本アプリについて</a></li>
-						<li role="presentation"><a href="#">コンタクト</a></li>
+						<li role="presentation"><a href="mailto:sachoco@gmail.com">コンタクト</a></li>
 					</ul>
 				</nav>
 				<h3 class="text-muted">FC2新着ブログ情報</h3>
