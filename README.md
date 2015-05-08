@@ -6,6 +6,16 @@ http://satoshishiraishi.com/exam0052/
 
 #### 動作環境：
 PHP 5.3.23以上
+* クライアント側のjavascriptが有効であること。
+
+#### 動作確認：
+* マック
+  * Chrome (42.0.2311.135)
+  * Firefox (36.0.4)
+  * Safari (8.0.6)
+
+* ウィンドウズ
+  * Internet Explorer 11 (11.0.7)
 
 #### 導入の手引き：
 1. ファイルのアップロード
