@@ -19,7 +19,8 @@ $latest = $entryTable->select(function (Select $select) {
      $select->order('date DESC')->limit(1);
 });
 if($latest->count()!=0) {
-	$latest_date = $latest->toArray()[0]["date"];
+	$latest_date = $latest->toArray();
+	$latest_date = $latest_date[0]["date"];
 }else{
 	$latest_date = 0;
 }
