@@ -31,7 +31,7 @@ ALTER TABLE `entry`
 MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=0;
   ```
 3. cronジョブの作成
-  + シェルコマンド”crontab -e”にて以下のコマンドを入力
+  + シェルコマンド”crontab -e”にて以下のコマンドを追加
   ```
   */5 * * * * <PATH-TO-THE-ROOT-DIRECTORY>/import.php > /dev/null 2>&1
   ```  
